@@ -29,4 +29,15 @@ export default withApiAuthRequired(
 );
 ```
 
+By default it will return 404 for unhandled methods but you can override the behavior as follows:
+```
+export default withMethodHandler({
+  'PUT': handlePut,
+  'GET': handleGet,
+  'other': (req, res) => res.status(400).end()
+);
+```
+
 ## License
+
+MIT 2021 - José F. Romaniello
