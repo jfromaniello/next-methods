@@ -31,7 +31,7 @@ export default withApiAuthRequired(
 
 By default it will return 404 for unhandled methods but you can override the behavior as follows:
 
-```js
+```javascript
 export default withMethodHandler({
   'PUT': handlePut,
   'GET': handleGet,
