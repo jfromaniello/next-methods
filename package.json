@@ -1,6 +1,6 @@
 {
   "name": "next-methods",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Split next.js handlers by http method.",
   "main": "dist/index.js",
   "scripts": {
